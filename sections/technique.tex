@@ -1,0 +1,55 @@
+\begin{frame}
+  \frametitle{Query-aware}
+    \begin{columns}[T]
+    \begin{column}{0.5\textwidth}
+  \begin{figure}
+\centering
+\scalebox{0.8}{
+\begin{tabular}{r|l|}
+\hhline{~-}
+ 1 & \texttt{SELECT * FROM OFFICE\_INFO WHERE}\\
+ & {\color<3->{red} \texttt{HAS\_PRINTER=1 OR HAS\_PRINTER=0}}\texttt{;}\\
+\hhline{~-}
+\end{tabular}
+}
+\caption{\label{fig:schemaP1}A query that selects all intended values of
+\texttt{HAS\_PRINTER}.}
+\end{figure}
+\end{column}
+    \begin{column}{0.5\textwidth}
+      \only<2->{
+       \begin{figure}
+\centering
+\scalebox{0.8}{
+\begin{tabular}{r|l|}
+\hhline{~-}
+1 & \texttt{INSERT INTO OFFICE\_INFO}\\
+& \texttt{VALUES (0,'',{\color<3->{red} 2});}\\
+\hhline{~-}
+\end{tabular}
+}
+\caption{\label{fig:schemaP1}Query-aware \textit{SchemaAnalyst}
+discovers a counter-example.}
+\end{figure}
+}
+
+    \end{column}
+  \end{columns}
+  \end{frame}
+
+\begin{frame}%[label=current]
+    \frametitle{Method of Approach}
+    \framesubtitle{\mbox{}}
+    \centering
+    \input{styles/kapfhammer-solarized-tikz-colors.tex}
+    \input{details/newdiagram.tex}
+\end{frame}
+
+
+% \begin{frame}%[label=current]
+%     \frametitle{Doubling Schemas}
+%     \framesubtitle{\mbox{}}
+%     \centering
+%     \input{styles/kapfhammer-solarized-tikz-colors.tex}
+%     \input{details/semantic.tex}
+% \end{frame}

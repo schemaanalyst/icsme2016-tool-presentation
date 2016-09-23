@@ -1,0 +1,60 @@
+\input{styles/kapfhammer-solarized-tikz-colors.tex}
+\begin{frame}[t]{Key Contributions}
+  \framesubtitle{\mbox{}}
+
+  \hspace*{-.5in}
+  \begin{minipage}{5in}
+  \begin{center}
+
+    \begin{minipage}{4.5in}
+
+    \begin{figure}
+
+    \begin{center}
+
+      \begin{tikzpicture}[node distance=1cm, auto,>=stealth, thick]
+
+        \path[use as bounding box] (-2,4.0) rectangle (10,-2);
+
+        \path[->]<1-> node[prochighlight, text width=54ex]
+        (Loss) at (4,2.8)
+        {\large \textit{SchemaAnalyst} effective at test data generation \\ 
+        but difficult to inspect and not always helpful};
+
+        \path[->]<2-> node[proc, below of=Loss, text width=50ex,
+          yshift=-.225in, xshift=0in] (Comment) {\large Extending
+          \textit{SchemaAnalyst} with query-aware capabilities};
+
+        \path[->]<3-> node[proc, below of=Comment, text width=50ex,
+          yshift=-.2in, xshift=0in] (CommentAgain) {\large A
+          comprehensive empirical study \\ evaluating search-based
+          approach};
+
+        \path[->]<4-> node[prochighlight, below of=CommentAgain, text
+          width=50ex, yshift=-.2in, xshift=0in] (CommentOneMore)
+          {\large Enhance the testing of database systems in industry and enable future
+          research!};
+
+        % \path[->]<5-> node[prochighlight, below of=CommentOneMore, text
+        %   width=36ex, yshift=-.025in, xshift=0in] (CommentFinal)
+        % {\large https://github.com/kinneerc/ExpOse};
+
+        %% \path[->]<3-> node[prochighlight, below of=Ambler, text width=48ex,
+        %%   yshift=-.5in, xshift=0in] (SchemaAnalyst)
+        %% {This paper presents {\em SchemaAnalyst}, a search-based
+        %%   system for testing the complex \\ integrity constraints in
+        %%   relational schemas};
+
+    \end{tikzpicture}
+
+        \end{center}
+
+        \end{figure}
+
+      \end{minipage}
+
+  \end{center}
+  \end{minipage}
+
+\end{frame}
+
