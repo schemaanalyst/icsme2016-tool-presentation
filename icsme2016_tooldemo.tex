@@ -1,0 +1,101 @@
+%!TEX root=kinneer_seke.tex
+% mainfile: kinneer_seke.tex
+
+\documentclass[hyperref]{beamer}
+% \includeonlyframes{current}
+
+\usecolortheme[accent=blue,dark]{solarized}
+
+\beamertemplatetransparentcovered
+
+\usepackage[utf8]{inputenc}
+\usepackage{merriweather}
+\usepackage{moresize}
+\usepackage{anyfontsize}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{hhline}
+
+\newcommand{\reducedstrut}{\vrule width 0pt height \ht\strutbox depth \dp\strutbox\relax}
+
+\newcommand{\highlight}[1]{%
+  \begingroup
+  \setlength{\fboxsep}{0pt}%
+  \colorbox{red!20}{\reducedstrut#1\/}%
+  \endgroup
+}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.9}
+\usepgfplotslibrary{colormaps,external}
+
+\usepackage{pifont}
+\newcommand{\cmark}{{\color{solarizedGreen}\ding{51}}}
+\newcommand{\xmark}{{\color{solarizedOrange}{\ding{55}}}}
+\newcommand{\cmarkhide}{{\color{kapfhammerDarkGrey}\ding{51}}}
+\newcommand{\xmarkhide}{{\color{kapfhammerDarkGrey}{\ding{55}}}}
+\newcommand\sql[1]{{\tt \small #1}}
+
+\usepackage{tikz}
+\usetikzlibrary{positioning,shadows,arrows,shapes,calc,backgrounds}
+
+\setbeamercolor{background canvas}{bg=kapfhammerDarkGrey}
+
+\setbeamertemplate{section in toc shaded}[default][65]
+\setbeamertemplate{subsection in toc shaded}[default][65]
+
+\setbeamertemplate{navigation symbols}{}
+
+\setbeamerfont{title}{size=\huge,series=\rmfamily,parent=merriweather}
+\setbeamerfont{frametitle}{size=\HUGE,series=\rmfamily,parent=merriweather}
+\setbeamerfont{framesubtitle}{size=\normalsize,series=\rmfamily,parent=merriweather}
+\setbeamerfont{subtitle}{size=\normalsize,series=\bfseries,parent=merriweather}
+\setbeamerfont{author}{size=\LARGE,series=\bfseries,parent=merriweather}
+\setbeamerfont{institute}{size=\normalsize,series=\bfseries,parent=merriweather}
+\setbeamerfont{date}{size=\normalsize,series=\bfseries,parent=merriweather}
+
+\setbeamercolor{title}{fg=solarizedOrange}
+\setbeamercolor{subtitle}{fg=solarizedViolet}
+\setbeamercolor{frametitle}{fg=solarizedRebase00}
+\setbeamercolor{framesubtitle}{fg=solarizedRebase00}
+\setbeamercolor{author}{fg=solarizedRebase00}
+\setbeamercolor{institute}{fg=solarizedRebase00}
+\setbeamercolor{date}{fg=solarizedRebase00}
+
+\addtobeamertemplate{frametitle}{\vskip.1in}{}
+
+
+\title{Query-aware Search-based Schema Testing}
+
+% \subtitle{That title is just excessive}
+% \subtitle{(for Relational Database Schemas)}
+
+\author[Kinneer]{Cody Kinneer}
+\institute[Allegheny College 2015]{Allegheny 2015}
+\date[Nov 9, 2015]{Nov 18, 2015}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\section{Database Schema Testing}
+\input{sections/introduction.tex}
+
+\section{Background}
+\input{sections/background.tex}
+
+\section{Query-aware Schema Testing}
+\input{sections/technique.tex}
+
+\section{Experiment Design}
+\input{sections/experiments.tex}
+
+\section{Results}
+\input{sections/results.tex}
+
+\section{Conclusion}
+\input{sections/conclusion.tex}
+
+\end{document}
