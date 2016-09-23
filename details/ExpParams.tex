@@ -1,0 +1,55 @@
+\vspace*{.2in}
+   \pgfdeclareimage[height=8ex]{koha}{images/koha}
+   \pgfdeclareimage[height=8ex]{bitbeaker}{images/bitbeaker}
+   \pgfdeclareimage[height=8ex]{wordpress}{images/wordpress}
+
+
+\begin{tikzpicture}[node distance=0cm, auto, thick]
+
+
+
+
+        \path[use as bounding box] (-2,2.5) rectangle (10,-2);
+
+        \path[->]<1-> node[proc, text width=14ex]
+        (Software) at (3.5,2.5) {Empirical Study};
+
+        \path[->]<2-> node[proc, right of=Software,
+                      yshift=-.5in, xshift=-1.75in, text width=12ex]
+                      (Code) {Performance}
+        (Software) edge node {} (Code);
+
+        \path[->]<3-> node[proc, below of=Software,
+                      yshift=-.5in, xshift=1.75in, text width=12ex]
+                      (Features) {Effectiveness}
+        (Software) edge node {} (Features);
+
+        
+        \path[->]<4-> node[specialGreen, below of=Software,
+                      yshift=-0.85in,text width=30ex]
+                      (conclusion)
+                      {Three case study programs};
+
+        \path[->]<5-> node[below of=conclusion,
+                      yshift=-0.60in, xshift=-1in]
+                      (wordpress)
+                      {\pgfuseimage{wordpress}};
+
+        \path[->]<6-> node[below of=conclusion,
+                      yshift=-0.60in]
+                      (koha)
+                      {\pgfuseimage{koha}};
+
+        \path[->]<7-> node[below of=conclusion,
+                      yshift=-0.60in, xshift=1in]
+                      (bitbeaker)
+                      {\pgfuseimage{bitbeaker}};
+
+        \path[->]<8-> node[specialGreen, below of=koha,
+                      yshift=-.65in,text width=30ex]
+                      (Quotations)
+                      {Popular, real-world programs with a variety of
+                      characteristics};
+
+
+\end{tikzpicture}
