@@ -1,0 +1,25 @@
+\begin{figure}[ht]
+\centering
+\scalebox{0.8}{
+\begin{tabular}{r|l|}
+\hhline{~-}
+ 1 & \texttt{CREATE TABLE DEPT\_INFO (}\\
+ 2 & \texttt{  DEPT\_ID INTEGER \highlight{NOT NULL},}\\
+ 3 & \texttt{  DEPT\_NAME VARCHAR(50),}\\
+ 4 & \texttt{  \highlight{PRIMARY KEY} (DEPT\_ID)}\\
+ 5 & \texttt{);}\\
+ 6 & \\
+ 7 & \texttt{CREATE TABLE COURSE\_INFO (}\\
+ 8 & \texttt{  COURSE\_ID INTEGER \highlight{NOT NULL},}\\
+ 9 & \texttt{  COURSE\_NAME VARCHAR(50),}\\
+10 & \texttt{  OFFERED\_DEPT INTEGER,}\\
+11 & \texttt{  GRADUATE\_LVL SMALLINT,}\\
+12 & \texttt{  \highlight{PRIMARY KEY} (COURSE\_ID),}\\
+13 & \texttt{  \highlight{FOREIGN KEY} (OFFERED\_DEPT) REFERENCES
+DEPT\_INFO (DEPT\_ID)}\\
+14 & \texttt{);}\\
+\hhline{~-}
+\end{tabular}
+}
+\caption{\label{fig:schema}A sample of the UnixUsage schema.}
+\end{figure}

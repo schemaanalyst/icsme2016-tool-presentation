@@ -1,0 +1,23 @@
+\begin{figure}
+\centering
+\scalebox{0.8}{
+\begin{tabular}{r|l|}
+\hhline{~-}
+ 1 & \texttt{CREATE TABLE DEPT\_INFO (}\\
+ 2 & \texttt{  DEPT\_ID INTEGER \alert<2->{NOT NULL},}\\
+ 3 & \texttt{  DEPT\_NAME VARCHAR(50),}\\
+ 4 & \texttt{  \alert<3->{PRIMARY KEY} (DEPT\_ID)}\\
+ 5 & \texttt{);}\\
+ 6 & \\
+ 7 & \texttt{CREATE TABLE OFFICE\_INFO (}\\ 
+ 8 & \texttt{  OFFICE\_ID INTEGER \alert<2->{NOT NULL},}\\ 
+ 9 & \texttt{  OFFICE\_NAME VARCHAR(50),}\\ 
+ 10 & \texttt{  HAS\_PRINTER SMALLINT,}\\ 
+ 11 & \texttt{  \alert<3->{PRIMARY KEY} (OFFICE\_ID)}\\
+ 12 & \texttt{);}\\
+ 
+\hhline{~-}
+\end{tabular}
+}
+\caption{\label{fig:schemaP1}A sample of the UnixUsage schema.}
+\end{figure}

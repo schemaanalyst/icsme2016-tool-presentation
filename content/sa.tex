@@ -1,0 +1,57 @@
+\newcommand{\mx}[1]{\mathbf{\bm{#1}}} % Matrix command
+\newcommand{\vc}[1]{\mathbf{\bm{#1}}} % Vector command
+
+% Define the layers to draw the diagram
+\pgfdeclarelayer{background}
+\pgfdeclarelayer{foreground}
+\pgfsetlayers{background,main,foreground}
+
+% Define block styles used later
+
+\tikzstyle{sensor}=[draw, fill=black!10, text width=5em,
+    text centered, minimum height=2.5em,drop shadow]
+\tikzstyle{ann} = [above, text width=5em, text centered]
+\tikzstyle{wa} = [sensor, text width=10em, fill=black!30,
+    minimum height=6em, rounded corners, drop shadow]
+\tikzstyle{sc} = [sensor, text width=13em, fill=red!30,
+    minimum height=10em, rounded corners, drop shadow]
+
+% Define distances for bordering
+\def\blockdist{1.5}
+\def\edgedist{2.5}
+
+\begin{figure}
+  \centering
+
+\begin{tikzpicture}[thick,scale=0.85, every node/.style={scale=0.85}]
+    \node (wa) [wa]  {\textit{SchemaAnalyst}};
+    \path (wa.west)+(-\blockdist,-1.25) node (asr1) [sensor] {Database Schema};
+
+    \path (wa.west)+(-\blockdist,1.25) node (asr2)[sensor] {Coverage Criterion};
+    \path (wa.west)+(-\blockdist,0.0) node (dots)[sensor] {Data Generator};
+
+    % \path (dots.west)+(-2.65*\blockdist,-0.0) node (dataa) [sensor] {Data Generator};
+    % \path (asr2.west)+(-2.65*\blockdist,-0.0) node (criteriona) [sensor] {Coverage Criterion};
+
+    \path (wa.east)+(\blockdist,0) node (vote) [sensor] {Test Suite};
+
+    \path [draw, ->] (asr1.east) -- node [above] {}
+        (wa.200);
+    \path [draw, ->] (asr2.east) -- node [above] {}
+        (wa.160);
+    \path [draw, ->] (dots.east) -- node [above] {}
+        (wa.180);
+    \path [draw, ->] (wa.east) -- node [above] {}
+        (vote.west);
+
+    % \path [draw, ->] (dataa.east) -- node [above] {}
+    %     (dots.west);
+    % \path [draw, ->] (criteriona.east) -- node [above] {}
+    %     (asr2.west);
+    % \path [draw, ->] (schemaa.east) -| node [above] {}
+    %     (doubler.230);
+    %
+\end{tikzpicture}
+\caption{\label{fig:schemaanalyst}The inputs and outputs of the
+\textit{SchemaAnalyst} system.}
+\end{figure}
