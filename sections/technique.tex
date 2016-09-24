@@ -17,7 +17,7 @@
  7 & \texttt{CREATE TABLE \alert<15-18>{OFFICE\_INFO} (}\\ 
  8 & \texttt{  OFFICE\_ID INTEGER {\color<16>{green} \color<18>{red} NOT NULL},}\\ 
  9 & \texttt{  OFFICE\_NAME VARCHAR(50),}\\ 
- 10 & \texttt{  \alert<20>{HAS\_PRINTER SMALLINT},}\\ 
+ 10 & \texttt{HAS\_PRINTER SMALLINT,}\\ 
  11 & \texttt{  {\color<16>{green} \color<18>{red} PRIMARY KEY} (OFFICE\_ID)}\\
  12 & \texttt{);}\\
  
@@ -35,7 +35,7 @@
 \scalebox{0.8}{
 \begin{tabular}{r|l|}
 \hhline{~-}
-{\color<10->{green} \alert<3-9>{1}} & \texttt{INSERT INTO \alert<6-9>{DEPT\_INFO}}\\  
+{\color<10-19>{green} \alert<3-9>{1}} & \texttt{INSERT INTO \alert<6-9>{DEPT\_INFO}}\\  
 & \texttt{VALUES (\alert<4-9>{0}, \alert<5-9>{''});}\\ 
  &\\
  {\color<14->{red} \alert<11-13>{2}} & \texttt{INSERT INTO
