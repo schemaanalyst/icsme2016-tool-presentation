@@ -1,8 +1,22 @@
  \begin{frame}%[label=current]
-        \frametitle{Evaluation}
+        \frametitle{Usage}
         \framesubtitle{\mbox{}}
         \centering
-        \input{styles/kapfhammer-solarized-tikz-colors.tex}
-        \input{details/ExpParams.tex}
+	%\verbatiminput{content/Usage.txt}
+	\begin{tabular}{l}
+		\hspace{-1em} Usage: <main class> [options] [command] [command options] \\
+  Options: \\
+  \end{tabular}
+  \begin{tabular}{ll}
+   \hspace{1em} --criterion, -c\\
+     \hspace{2em}  Coverage Criterion & Default: ICC\\
+   \hspace{1em} --generator, -g, --dataGenerator\\
+     \hspace{2em}  Data Generation Algorithm & Default: avsDefaults\\
+  \hspace{1em}  --dbms, -d, --database\\
+  \hspace{2em}    Database Management System & Default: SQLite\\
+   \hspace{1em} --help, -h\\
+   \hspace{2em}    Prints this help menu & Default: false\\
+\hspace{1em}  * --schema, -s\\
+\hspace{2em}     Target Schema & Default: <required>
+	\end{tabular}
 \end{frame}
-
