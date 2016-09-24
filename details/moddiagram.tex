@@ -27,24 +27,24 @@
 
   \path[use as bounding box] (-3.0,2.5) rectangle (10,-2);
 
-    \path[->]<1-> node[proc, text width=15ex]
-    (sa) at (1.5,.75) {\centering \textit{SchemaAnalyst} \\ Execution};
+    \path[->]<1-> node[]
+	    (sa) at (1.5,.75) {\includegraphics[width=3cm]{sa_logo.png}};
 
     \path[->]<2-> node[io, left of=sa, yshift=0.70in,
     xshift=-1.25in,text width=8.5ex]
-    (cc) {\centering Coverage \\ Criterion} (cc) edge node {} (sa);
+    (cc) {\centering Coverage Criterion} (cc) edge node {} (sa);
 
     \path[->]<3-> node[io, left of=sa, yshift=0.0in,
-    xshift=-1.25in,text width=8.5ex]
-    (dg) {\centering Data \\ Generator} (dg) edge node {} (sa);
+    xshift=-1.25in,text width=9.0ex]
+    (dg) {\centering Data Generator} (dg) edge node {} (sa);
 
     \path[->]<4-> node[io, left of=sa, yshift=-0.70in,
     xshift=-1.25in,text width=8.5ex]
-    (ds) {\centering Database \\ Schema} (ds) edge node {} (sa);
+    (ds) {\centering Database Schema} (ds) edge node {} (sa);
 
     \path[->]<5-> node[io, right of=sa, yshift=0.0in,
     xshift=1.25in,text width=8.5ex]
-    (ts) {\centering Test \\ Suite \\} (sa) edge node {} (ts);
+    (ts) {\centering JUnit Test~Suite} (sa) edge node {} (ts);
 
     % \path[->]<6-> node[io, left of=sa, yshift=-1.40in,
     % xshift=-1.25in,text width=8.5ex]
