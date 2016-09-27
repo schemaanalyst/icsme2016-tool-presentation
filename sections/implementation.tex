@@ -1,11 +1,12 @@
  \begin{frame}
 	 \frametitle{Installation}
         \framesubtitle{\mbox{}}
+	\setlength{\leftmargini}{1.5em}
         \centering
 	\begin{enumerate}
-		\only<1->{ \item \texttt{git clone git@github.com:schemaanalyst-team/schemaanalyst.git}}
-		\only<2->{ \item \texttt{./gradlew compile}}
-		\only<3->{ \item \texttt{export CLASSPATH="build/classes/main:lib/*:build/lib/*:."}}
+		\item <1-> \texttt{git clone git@github.com:schemaanalyst-team/schemaanalyst.git}
+		\item <2-> \texttt{./gradlew compile}
+		\item <3-> \texttt{export CLASSPATH="build/classes/main:lib/*:build/lib/*:."}
 	\end{enumerate}
  \end{frame}
 
@@ -15,19 +16,19 @@
         \centering
 	%\verbatiminput{content/Usage.txt}
 	\begin{tabular}{l}
-		\hspace{-1em} Usage: <main class> [options] [command] [command options] \\
-  Options: \\
+  \hspace{-2em} Usage: <main class> [options] [command] [command options] \\
+  \hspace{-1em} Options: \\
   \end{tabular}
   \begin{tabular}{ll}
-   \hspace{1em} --criterion, -c\\
-     \hspace{2em}  Coverage Criterion & Default: ICC\\
-   \hspace{1em} --generator, -g, --dataGenerator\\
-     \hspace{2em}  Data Generation Algorithm & Default: avsDefaults\\
-  \hspace{1em}  --dbms, -d, --database\\
-  \hspace{2em}    Database Management System & Default: SQLite\\
-   \hspace{1em} --help, -h\\
-   \hspace{2em}    Prints this help menu & Default: false\\
-\hspace{1em}  * --schema, -s\\
-\hspace{2em}     Target Schema & Default: <required>
+   \hspace{0em} --criterion, -c\\
+     \hspace{1em}  Coverage Criterion & Default: ICC\\
+   \hspace{0em} --generator, -g, --dataGenerator\\
+     \hspace{1em}  Data Generation Algorithm & Default: avsDefaults\\
+  \hspace{0em}  --dbms, -d, --database\\
+  \hspace{1em}    Database Management System & Default: SQLite\\
+   \hspace{0em} --help, -h\\
+   \hspace{1em}    Prints this help menu & Default: false\\
+\hspace{0em}  * --schema, -s\\
+\hspace{1em}     Target Schema & Default: <required>
 	\end{tabular}
 \end{frame}
