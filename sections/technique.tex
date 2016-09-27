@@ -1,5 +1,6 @@
   \begin{frame}
     \frametitle{Testing Schemas}
+    \framesubtitle{\mbox{}}
      \begin{columns}[T]
     \begin{column}{0.5\textwidth}
       \centering
@@ -62,3 +63,54 @@ by \textit{SchemaAnalyst}.}
     \end{column}
   \end{columns}
   \end{frame}
+
+\begin{frame}
+	\frametitle{Real-world Ready}
+	\framesubtitle{\mbox{}}
+
+	  \hspace*{-.5in}
+  \begin{minipage}{5in}
+  \begin{center}
+
+    \begin{minipage}{4.5in}
+
+    \begin{figure}
+
+    \begin{center}
+
+      \begin{tikzpicture}[node distance=1cm, auto,>=stealth, thick]
+
+        \path[use as bounding box] (-2,4.0) rectangle (10,-2);
+
+        \path[->]<1-> node[proc, text width=54ex]
+        (Loss) at (4,2.8)
+        {\large \textit{SchemaAnalyst} has been used to generate test data for real world schemas, including those found in Firefox and StackOverflow.};
+
+        \path[->]<2-> node[proc, below of=Loss, text width=54ex,
+		yshift=-.4in, xshift=0in] (Comment) {\large Prior performance evaluation showed that \textit{SchemaAnalyst} scales to efficenty test schemas with thousands of tables, columns, and constraints.};
+
+        \path[->]<3-> node[prochighlight, below of=Comment, text width=54ex,
+		yshift=-.3in, xshift=0in] (CommentAgain) {\large \textit{SchemaAnalyst} provides an efficient means of generating test data for real-world database applications.};
+
+        % \path[->]<5-> node[prochighlight, below of=CommentOneMore, text
+        %   width=36ex, yshift=-.025in, xshift=0in] (CommentFinal)
+        % {\large https://github.com/kinneerc/ExpOse};
+
+        %% \path[->]<3-> node[prochighlight, below of=Ambler, text width=48ex,
+        %%   yshift=-.5in, xshift=0in] (SchemaAnalyst)
+        %% {This paper presents {\em SchemaAnalyst}, a search-based
+        %%   system for testing the complex \\ integrity constraints in
+        %%   relational schemas};
+
+    \end{tikzpicture}
+
+        \end{center}
+
+        \end{figure}
+
+      \end{minipage}
+
+  \end{center}
+  \end{minipage}
+
+\end{frame}
