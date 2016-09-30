@@ -37,7 +37,7 @@
 
       \begin{tikzpicture}[node distance=1cm, auto,>=stealth, thick]
 
-        \path[use as bounding box] (-2,3.5) rectangle (10,-2);
+        \path[use as bounding box] (-2,3.0) rectangle (10,-2);
 
         %% (Software) edge node {} (Features);
 
@@ -87,6 +87,10 @@
         \path[->]<6-> node[procold, below of=Sqlite, text width=12ex,
                       yshift=-.225in, xshift=.75in]
                       (Astro) {Astrophysics};
+
+	\path[->]<7-> node[special, below of=Sqlite, text width=24ex,
+		yshift=-.575in, xshift=0.0in]
+		(stack) {Over 1,000,000 posts!};
 
 
     \end{tikzpicture}
