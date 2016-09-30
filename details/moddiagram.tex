@@ -25,7 +25,7 @@
 
 \begin{tikzpicture}[thick,scale=1, every node/.style={scale=1}]
 
-  \path[use as bounding box] (-3.0,2.5) rectangle (10,-2);
+  \path[use as bounding box] (-3.25,2.5) rectangle (10,-2);
 
     \path[->]<1-> node[]
 	    (sa) at (1.5,.75) {\includegraphics[width=3cm]{content/sa_logo.png}};
@@ -45,6 +45,8 @@
     \path[->]<5-> node[io, right of=sa, yshift=0.0in,
     xshift=1.25in,text width=8.5ex]
     (ts) {\centering JUnit Test~Suite} (sa) edge node {} (ts);
+
+    \path[->]<6-> node[special,below of=sa, yshift=-1.0in,text width=24em] (takeaway) {Extensible tool for test data generation};
 
     % \path[->]<6-> node[io, left of=sa, yshift=-1.40in,
     % xshift=-1.25in,text width=8.5ex]
