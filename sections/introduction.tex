@@ -11,6 +11,63 @@
     \input{content/UnixUsageP1}
   \end{frame}
 
+  \begin{frame}
+	  \frametitle{Testing Database Schemas}
+	  \framesubtitle{\mbox{}}
+	  \centering
+
+	  \hspace*{-.5in}
+  \begin{minipage}{5in}
+  \begin{center}
+
+    \begin{minipage}{4.5in}
+
+    \begin{figure}
+
+    \begin{center}
+
+      \begin{tikzpicture}[node distance=1cm, auto,>=stealth, thick]
+
+        \path[use as bounding box] (-2,4.0) rectangle (10,-2);
+
+        \path[->]<1-> node[proc, text width=54ex]
+        (Loss) at (4,2.8)
+        {\large Manual testing is onerous and error prone};
+
+        \path[->]<2-> node[proc, below of=Loss, text width=54ex,
+		yshift=-.1in, xshift=0in] (Comment) {\large DBMonster only supports one DMBS};
+
+        \path[->]<3-> node[proc, below of=Comment, text width=54ex,
+		yshift=-.1in, xshift=0in] (CommentAgain) {\large Crashes and poor constraint coverage};
+
+	\path[->]<4-> node[prochighlight, below of=CommentAgain, text width=54ex,
+		yshift=-.1in, xshift=0in] (CommentOnceMore) {\large Schemas often not tested at all!};
+
+
+        % \path[->]<5-> node[prochighlight, below of=CommentOneMore, text
+        %   width=36ex, yshift=-.025in, xshift=0in] (CommentFinal)
+        % {\large https://github.com/kinneerc/ExpOse};
+
+        %% \path[->]<3-> node[prochighlight, below of=Ambler, text width=48ex,
+        %%   yshift=-.5in, xshift=0in] (SchemaAnalyst)
+        %% {This paper presents {\em SchemaAnalyst}, a search-based
+        %%   system for testing the complex \\ integrity constraints in
+        %%   relational schemas};
+
+    \end{tikzpicture}
+
+        \end{center}
+
+        \end{figure}
+
+      \end{minipage}
+
+  \end{center}
+  \end{minipage}
+
+\end{frame}
+
+
  \begin{frame}%[label=current]
    \frametitle{\textit{SchemaAnalyst}}
     \framesubtitle{\mbox{}}
