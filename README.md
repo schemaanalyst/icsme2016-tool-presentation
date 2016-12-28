@@ -1,16 +1,16 @@
 # icsme2016-tool-presentation
 
-![Sample of the ICSME 2016 Tool Presentation]()
+![Sample of the ICSME 2016 Tool Presentation](icsme2016_tooldemo.png)
 
 This repository contains the LaTeX source code and additional resources for a
-presentation that [Cody Kinneer](https://kinneerc.github.io/) (with the
-advice and assistance of [Gregory M.
-Kapfhammer](http://www.cs.allegheny.edu/sites/gkapfham/)) gave at the 32nd IEEE
-International Conference on Software Maintenance and Evolution (ICSME 2016). The
-presentation's source code uses a wide variety of LaTeX packages, such as
-`beamer` and `pgftikz`, in order to create each slide. I have developed a custom
-theme for the display of the slides and the use of progressive revealing of
-technical diagrams.
+presentation that [Cody Kinneer](https://kinneerc.github.io/) (with the advice
+and assistance of [Gregory M.
+Kapfhammer](http://www.cs.allegheny.edu/sites/gkapfham/) and [Phil
+McMinn](http://mcminn.io)) gave at the 32nd IEEE International Conference on
+Software Maintenance and Evolution (ICSME 2016). The presentation's source code
+uses a wide variety of LaTeX packages, such as `beamer` and `pgftikz`, in order
+to create each slide. I have developed a custom theme for the display of the
+slides and the use of progressive revealing of technical diagrams.
 
 You are welcome to use these slides as inspiration for your own presentation. If
 you find this example useful, could I trouble you to star this repository and
