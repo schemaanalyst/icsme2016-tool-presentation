@@ -9,12 +9,12 @@ Kapfhammer](http://www.cs.allegheny.edu/sites/gkapfham/) and [Phil
 McMinn](http://mcminn.io)) gave at the 32nd IEEE International Conference on
 Software Maintenance and Evolution (ICSME 2016). The presentation's source code
 uses a wide variety of LaTeX packages, such as `beamer` and `pgftikz`, in order
-to create each slide. I have developed a custom theme for the display of the
+to create each slide. We have developed a custom theme for the display of the
 slides and the use of progressive revealing of technical diagrams.
 
-You are welcome to use these slides as inspiration for your own presentation. If
-you find this example useful, could I trouble you to star this repository and
-then acknowledge it in your own presentation slides?
+You are welcome to use these slides as inspiration for your own presentation.
+If you find this example useful, could I trouble you to star this repository
+and then acknowledge it in your own presentation slides?
 
 You can type the following command if you want to clone this repository:
 
@@ -29,7 +29,7 @@ following commands.
 cd icsme2016-tool-presentation
 pdflatex icsme2016_tooldemo.tex
 pdflatex icsme2016_tooldemo.tex
-` ``
+```
 
 If this does not work well because you notice that some of the icons are
 rendering at a font size that is too small, then please try the following
